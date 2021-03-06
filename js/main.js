@@ -28,7 +28,7 @@ $(function () {
   
   function mouseOut() {
     document.getElementById("changeOne").style.backgroundImage =
-      "url(../images/general.jpg)";
+      "url(../images/render-black.PNG)";
   }
   
   function faqAnswer() {
@@ -78,7 +78,7 @@ $(function () {
   
   function bgOriginal() {
     document.getElementById("features").style.backgroundImage =
-      "url(../images/test-image.png)";
+      "url(../images/render-black.PNG)";
   }
   
   function bgChangeTwo() {
@@ -88,7 +88,7 @@ $(function () {
   
   function bgOriginalTwo() {
     document.getElementById("features").style.backgroundImage =
-      "url(../images/test-image.png)";
+      "url(../images/render-black.PNG)";
   }
   
   function bgChangeThree() {
@@ -98,7 +98,7 @@ $(function () {
   
   function bgOriginalThree() {
     document.getElementById("features").style.backgroundImage =
-      "url(../images/test-image.png)";
+      "url(../images/render-black.PNG)";
   }
   
   // Get the modal
