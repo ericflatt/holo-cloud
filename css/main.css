@@ -7,7 +7,7 @@ body {
   overflow-x: hidden;
   background-image: url(../images/bgtest.png);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-attachment: fixed; }
 
 a {
