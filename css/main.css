@@ -10,6 +10,9 @@ body {
   background-size: 100%;
   background-attachment: fixed; }
 
+a {
+  text-decoration: none; }
+
 img {
   pointer-events: none; }
 
@@ -232,12 +235,14 @@ canvas {
   font-family: "Faktum-Bold"; }
   @media only screen and (max-width: 800px) {
     .shocking-text {
-      font-size: 12vw; } }
+      font-size: 12vw;
+      margin-left: 15%; } }
 
 .projection-image {
   display: block;
   margin: auto;
-  width: 75%; }
+  width: 75%;
+  opacity: .7; }
   @media only screen and (max-width: 800px) {
     .projection-image {
       width: 100%; } }
@@ -247,7 +252,11 @@ canvas {
   margin: 100px 0; }
 
 .faq {
-  cursor: url(../images/faq-cursor.png), auto; }
+  cursor: url(../images/faq-cursor.png), auto;
+  margin-bottom: 100px; }
+
+.faq-ul {
+  padding-left: 0; }
 
 .faq-title {
   text-align: center;
@@ -257,6 +266,9 @@ canvas {
   font-size: 6vw;
   margin-top: 0;
   font-family: "Faktum-Bold"; }
+  @media only screen and (max-width: 1000px) {
+    .faq-title {
+      -webkit-text-stroke-width: 1px; } }
 
 .faq-question {
   -webkit-text-fill-color: transparent;
@@ -275,7 +287,12 @@ canvas {
 .faq-answer {
   visibility: hidden;
   margin-top: 0;
-  margin-left: 5%; }
+  margin-left: 5%;
+  width: 50%; }
+  @media only screen and (max-width: 800px) {
+    .faq-answer {
+      width: 90%;
+      font-size: 14px; } }
 
 .faq-answerTwo {
   visibility: hidden; }
@@ -306,6 +323,9 @@ canvas {
 
 .marquee-span {
   margin-right: 50px; }
+
+.feature-bold {
+  font-family: "Faktum-Bold"; }
 
 /* The Modal (background) */
 .modal {

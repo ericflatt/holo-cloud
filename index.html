@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery.marquee@1.5.0/jquery.marquee.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <title>holo-cloud</title>
   </head>
   <body>
@@ -24,10 +26,13 @@
         <h1 class="hero-title">holo-cloud</h1>
       </div>
       <div class="canvas-background-3d" style="width: 100%" id="container">
-        <canvas style="width: 100%; height: auto;" id="canvas3d"></canvas>
+        <canvas style="width: 100%; height: auto" id="canvas3d"></canvas>
       </div>
       <div>
-        <p style="margin-top: -100px;">Use your cursor to interact with the 3d model & scroll down to learn more</p>
+        <p style="margin-top: -100px">
+          Use your cursor to interact with the 3d model & scroll down to learn
+          more
+        </p>
       </div>
     </div>
 
@@ -38,20 +43,25 @@
           <!-- <button id="myBtn">Open Modal</button> -->
 
           <a
-            id="myBtn"
+            style="text-decoration: none;"
+            data-toggle="modal" data-target=".bd-example-modal-xl"
             class="feature-number feature-one"
             onmouseout="bgOriginal()"
             onmouseover="bgChange()"
-            >Real-time tracking and security alerts</a
+            >Real-time alerts</a
           >
           <a
+            style="text-decoration: none;"
+            data-toggle="modal" data-target=".bd-example-modal-lg"
             id="myBtnTwo"
             class="feature-number"
             onmouseout="bgOriginalTwo()"
             onmouseover="bgChangeTwo()"
-            >Data visualization</a
+            >Data Landscape</a
           >
           <a
+            style="text-decoration: none;"
+            data-toggle="modal" data-target=".bd-example-modal-sm"
             id="myBtnThree"
             class="feature-number"
             onmouseout="bgOriginalThree()"
@@ -62,30 +72,37 @@
       </div>
     </section>
 
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <span class="closeOne">&times;</span>
-        <p>Some text in the Modal..</p>
-      </div>
-    </div>
 
-    <div id="myModalTwo" class="modal">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <p>Some text in the Modal..</p>
-      </div>
+<div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <span class="feature-bold">Real Time Alerts:</span>
+      We keep track of all your assets so you don’t have to. Across all accounts and even external storage, holo-cloud will detect new high exposure areas and monitor suspicious activity 24/7. If something happens, we’ll let you know right away and give you an actionable plan to solve the issue before it gets out of hand. In the meantime, holo-cloud will also remind you of when passwords need to be updated, what assets have moved locations, and of document expiration within your Vault. 
     </div>
+  </div>
+</div>
 
-    <div id="myModalThree" class="modal">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <p>Some text in the Modal..</p>
-      </div>
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <span class="feature-bold">Data Landscape:</span>
+      Seeing how much information you have out there and where it is can be hard to understand. With Holo, our fully responsive hologram, you can visualise all your assets from cloud-based browser cookies and applications to external storage file management. Holo will show you exactly how much information any given platform has on you, and what level of exposure those assets are at. If you find a red spot, its time to take action and holo will walk you through how to solve it as well as what other areas of your landscape could be in trouble. When assets move, accounts are created, or a new device is purchased Holo will update to reflect that, giving you total clarity around the clock. 
     </div>
+  </div>
+</div>
+
+
+<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <span class="feature-bold">Data storage:</span>
+      Control what you want to protect most with our highly secure storage system. You can store and manage your account credentials, sensitive documents, and personal information within our companion application. The Vault feature utilizes RAID configuration to fragment your file across multiple devices and our main hub, creating a ‘fail-safe’ security environment. For anything you choose to store you can set an expiration date and level of authentication for seamless management of all your assets. 
+
+    </div>
+  </div>
+</div>
+
 
     <section>
       <div class="marquee">
@@ -120,10 +137,18 @@
     <section class="testimonial">
       <div class="testimonial-grid">
         <div class="testimonial-text">
-          <p class="shocking-text">"Shockingly <br> Practical" <br> - Happy Customer</p>
+          <p class="shocking-text">
+            "Shockingly <br />
+            Practical" <br />
+            - Happy Customer
+          </p>
         </div>
         <div>
-          <img class="projection-image" src="./images/projection.png" alt="photo here" />
+          <img
+            class="projection-image"
+            src="./images/projection.png"
+            alt="photo here"
+          />
         </div>
       </div>
     </section>
@@ -137,7 +162,7 @@
     <section class="faq">
       <h1 class="faq-title">FAQ</h1>
       <div>
-        <ul>
+        <ul class="faq-ul">
           <div class="faq-flex">
             <li
               onmouseout="faqGone()"
@@ -146,7 +171,7 @@
             >
               HOW DOES THE INTERNET KNOW SO MUCH ABOUT ME?
             </li>
-            <p id="faq-answer" class="faq-answer">- answer to question one</p>
+            <p id="faq-answer" class="faq-answer">Well there are a few ways, but basically there are programs running in the background of any website, social media, or application that collects information on you to help improve your experience with their product, but sometimes they take a little more than we realize. The other common way is we put it there ourselves by uploading photos, birthdays, locations and other sensitive information to applications we trust.</p>
           </div>
           <div class="faq-flex">
             <li
@@ -154,10 +179,10 @@
               onmouseover="faqAnswerTwo()"
               class="faq-question"
             >
-            WHY SHOULD I CARE ABOUT MY DATA?
+              WHY SHOULD I CARE ABOUT MY DATA?
             </li>
             <p id="faq-answerTwo" class="faq-answer">
-              - answer to question one
+              Your data is you. At the end of the day, data is just another way to say information and who wants all their information out there in the wind for anyone to see? Not us.
             </p>
           </div>
           <div class="faq-flex">
@@ -169,7 +194,7 @@
               WHAT IS THE VAULT?
             </li>
             <p id="faq-answerThree" class="faq-answer">
-              - answer to question one
+              The Vault is the storage feature within the holo-cloud app. We liked the name because real life vaults are really hard to crack and too heavy to steal so it's kinda a nice metaphor for our High-level security compliant RAID Configuration protocol.
             </p>
           </div>
           <div class="faq-flex">
@@ -181,7 +206,7 @@
               WHAT IS HOLO?
             </li>
             <p id="faq-answerFour" class="faq-answer">
-              - answer to question one
+              Holo is the holo-cloud 3D-hologram display. It is a semi-doom form and floats about 6 inches above whatever table or platform you put it on. It shows you where all your data is and makes a really great night light if you're into that. 
             </p>
           </div>
           <div class="faq-flex">
@@ -193,7 +218,7 @@
               AM I ACTUALLY AT RISK?
             </li>
             <p id="faq-answerFive" class="faq-answer">
-              - answer to question one
+              Um the short answer is yes. The slightly longer answer is there are 104 cyber threats on average per household each month so still yes. (don’t believe us? Check this out: Comcast - 2020 Xfinity Cyber Heath Report)
             </p>
           </div>
         </ul>
@@ -210,5 +235,6 @@
     <script src="js/assets.js"></script>
     <script src="js/scene.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/marquee.js"></script>
   </body>
 </html>

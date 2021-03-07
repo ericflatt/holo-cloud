@@ -13,6 +13,10 @@ body{
     background-attachment: fixed;
 }
 
+a{
+    text-decoration: none;
+}
+
 img{
     pointer-events: none;
 }
@@ -330,6 +334,7 @@ canvas {
 
     @media only screen and (max-width:800px){
         font-size: 12vw;
+        margin-left: 15%;
     }
 }
 
@@ -337,6 +342,7 @@ canvas {
     display: block;
     margin: auto;
     width: 75%;
+    opacity: .7;
     
     @media only screen and (max-width:800px){
         width: 100%;
@@ -351,6 +357,11 @@ canvas {
 
 .faq{
     cursor: url(../images/faq-cursor.png), auto;
+    margin-bottom: 100px;
+}
+
+.faq-ul{
+    padding-left: 0;
 }
 
 .faq-title{
@@ -361,6 +372,10 @@ canvas {
     font-size: 6vw;
     margin-top: 0;
     font-family: "Faktum-Bold";
+
+    @media only screen and (max-width:1000px){
+        -webkit-text-stroke-width: 1px;
+    }
 }
 
 .faq-question{
@@ -384,6 +399,12 @@ canvas {
     visibility: hidden;
     margin-top: 0;
     margin-left: 5%;
+    width: 50%;
+
+    @media only screen and (max-width:800px){
+        width: 90%;
+        font-size: 14px;
+    }
 }
 
 .faq-answerTwo{
@@ -421,6 +442,10 @@ canvas {
 
 .marquee-span{
     margin-right: 50px;
+}
+
+.feature-bold{
+    font-family: "Faktum-Bold";
 }
 
 // modal stuff
