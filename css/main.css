@@ -370,3 +370,10 @@ canvas {
   color: #000;
   text-decoration: none;
   cursor: pointer; }
+
+video {
+  width: 75%;
+  margin: auto;
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 100px; }
