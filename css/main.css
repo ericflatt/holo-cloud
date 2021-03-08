@@ -175,10 +175,9 @@ img {
   padding-top: 10px; }
 
 .features {
-  background-color: #181F27;
   cursor: url(../images/feature-cursor.png), auto;
   height: 100vh;
-  background-image: url(../images/render-black.PNG);
+  background-image: url(../images/featuresBGtwo.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -241,7 +240,7 @@ canvas {
 .projection-image {
   display: block;
   margin: auto;
-  width: 75%;
+  width: 65%;
   opacity: .7; }
   @media only screen and (max-width: 800px) {
     .projection-image {
@@ -262,7 +261,7 @@ canvas {
   text-align: center;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-color: white;
   font-size: 6vw;
   margin-top: 0;
   font-family: "Faktum-Bold"; }
@@ -273,7 +272,7 @@ canvas {
 .faq-question {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-color: white;
   font-size: 3vw;
   margin-left: 5%;
   list-style-type: none;

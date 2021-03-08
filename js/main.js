@@ -36,7 +36,7 @@ runtime.run();
   
   function mouseOut() {
     document.getElementById("changeOne").style.backgroundImage =
-      "url(../images/render-black.PNG)";
+      "url(../images/featuresBGtwo.png)";
   }
   
   function faqAnswer() {
@@ -86,7 +86,7 @@ runtime.run();
   
   function bgOriginal() {
     document.getElementById("features").style.backgroundImage =
-      "url(../images/render-black.PNG)";
+      "url(../images/featuresBGtwo.png)";
   }
   
   function bgChangeTwo() {
@@ -96,7 +96,7 @@ runtime.run();
   
   function bgOriginalTwo() {
     document.getElementById("features").style.backgroundImage =
-      "url(../images/render-black.PNG)";
+      "url(../images/featuresBGtwo.png)";
   }
   
   function bgChangeThree() {
@@ -106,7 +106,7 @@ runtime.run();
   
   function bgOriginalThree() {
     document.getElementById("features").style.backgroundImage =
-      "url(../images/render-black.PNG)";
+      "url(../images/featuresBGtwo.png)";
   }
   
   // // Get the modal
